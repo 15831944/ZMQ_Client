@@ -8,7 +8,7 @@
 using namespace ZMQ_API;
 using namespace ZMQ_IMPL;
 
-ProducerImpl::ProducerImpl(Properties& properties) : m_bStartedFlag(false)
+ProducerImpl::ProducerImpl(Properties properties) : m_bStartedFlag(false)
 {
 	std::string strProducerID = (properties[Producer_Id].empty() ? "__DEFAULT_ZMQ_PRODUCER_GROUP__" : properties[Producer_Id]);
 	this->m_producer.setProducerGroup(strProducerID);

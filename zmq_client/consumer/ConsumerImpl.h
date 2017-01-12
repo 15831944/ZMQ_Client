@@ -22,7 +22,7 @@ namespace com
 					class ConsumerImpl : public ZMQ_API::Consumer
 					{
 					public:
-						ConsumerImpl(ZMQ_API::Properties& properties);
+						ConsumerImpl(ZMQ_API::Properties properties);
 						void start();
 						void shutdown();
 						bool isStarted();

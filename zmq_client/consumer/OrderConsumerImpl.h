@@ -22,7 +22,7 @@ namespace com
 					class OrderConsumerImpl : public ZMQ_API::OrderConsumer
 					{
 					public:
-						OrderConsumerImpl(ZMQ_API::Properties& properties);
+						OrderConsumerImpl(ZMQ_API::Properties properties);
 						void start();
 						void shutdown();
 						bool isStarted();

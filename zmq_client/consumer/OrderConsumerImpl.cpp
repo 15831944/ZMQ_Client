@@ -8,7 +8,7 @@
 using namespace ZMQ_API;
 using namespace ZMQ_IMPL;
 
-OrderConsumerImpl::OrderConsumerImpl(Properties& properties) :m_bStartedFlag(false)
+OrderConsumerImpl::OrderConsumerImpl(Properties properties) :m_bStartedFlag(false)
 {
 	this->m_consumer.setConsumerGroup(properties[Consumer_Id]);
 

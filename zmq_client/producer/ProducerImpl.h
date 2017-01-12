@@ -20,7 +20,7 @@ namespace com
 					class ProducerImpl : public ZMQ_API::Producer
 					{
 					public:
-						ProducerImpl(ZMQ_API::Properties& properties);
+						ProducerImpl(ZMQ_API::Properties properties);
 
 						void start();
 						void shutdown();

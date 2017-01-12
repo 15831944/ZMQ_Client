@@ -9,7 +9,7 @@ using namespace ZMQ_API;
 using namespace ZMQ_IMPL;
 
 
-ConsumerImpl::ConsumerImpl( Properties& properties) :m_bStartedFlag(false)
+ConsumerImpl::ConsumerImpl( Properties properties) :m_bStartedFlag(false)
 {
 	this->m_consumer.setConsumerGroup(properties[Consumer_Id]);
 

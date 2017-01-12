@@ -21,7 +21,7 @@ namespace com
 					class OrderProducerImpl : public ZMQ_API::OrderProducer
 					{
 					public:
-						OrderProducerImpl(ZMQ_API::Properties& properties);
+						OrderProducerImpl(ZMQ_API::Properties properties);
 						void start();
 						void shutdown();
 						bool isStarted();
